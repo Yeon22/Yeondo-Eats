@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
-/* Custom Properties */
-:root {
-  --leading: 2em;
-}
+@import url('./variable.css');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -52,7 +48,7 @@ h1 span::before {
   content: ' ';
   position: absolute;
   width: 3em;
-  background-color: #00Bfff;
+  background-color: var(--before-color);
   height: .4em;
   bottom: 0;
   z-index: -1;
@@ -129,7 +125,7 @@ h2::before {
   content: ' ';
   position: absolute;
   width: 8em;
-  background-color: #00Bfff;
+  background-color: var(--before-color);
   height: .4em;
   z-index: -1;
   margin-left: -.3em;
@@ -141,7 +137,7 @@ img {
 }
 
 p {
-  line-height: var(--leading);
+  line-height: 2em;
 }
 
 .overlay {
@@ -158,14 +154,6 @@ p {
 
 .animate-overlay {
   animation: overlay 3s forwards;
-}
-
-footer {
-  font-weight: bold;
-  text-align: center;
-  background-color: #00Bfff;
-  color: white;
-  min-height: 4em;
 }
 
 @media (min-width: 730px) {
