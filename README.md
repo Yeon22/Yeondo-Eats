@@ -1,6 +1,6 @@
 # YeondoEats
 
-This is only using html, css healthy food homepage project.
+This is only using html, css and little Javascript healthy food homepage project.
 
 Mobile first design.
 
